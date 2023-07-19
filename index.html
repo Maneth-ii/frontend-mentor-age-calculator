@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="">
+
+      <!-- inputs -->
+      <form class="inputs-container" id="date-form">
+        <div class="input-container">
+          <label for="day-input" class="label">DAY</label>
+          <input class="day-input-box" type="number" name="day-input" id="day-input" placeholder="DD">
+          <p class="error-msg">Must be a valid day</p>
+        </div>
+        <div class="input-container">
+          <label for="month-input" class="label">MONTH</label>
+          <input class="month-input-box" type="number" name="month-input" id="month-input" placeholder="MM">
+          <p class="error-msg">Must be a valid month</p>
+        </div>
+        <div class="input-container">
+          <label for="year-input" class="label">YEAR</label>
+          <input  class="year-input-box" type="number" name="year-input" id="year-input" placeholder="YYYY">
+          <p class="error-msg">Must be in the past</p>
+        </div>
+      </form>
+
+      <div class="fancy-style">
+        <div class="line">
+
+        </div>
+        <div class='icon' id="submit-btn-fancy">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </div>
+        </div>
+    </div>
+      
+    
+    <!-- output -->
+    <div class="display">
+      <p class="output-text" id="years-output"></p>
+      <p class="output-text" id="months-output"></p>
+      <p class="output-text" id="days-output"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
